@@ -2,14 +2,14 @@
 import { Upload, Server, Download } from 'lucide-react';
 import InProgress from './components/InProgress';
 import CsvOutPut from './components/CsvOutput';
-import { JSX, useEffect, useState } from 'react';
+import { JSX, useState } from 'react';
 import CsvDownloadButton from 'react-json-to-csv'
 export default function App () {
 
   const [currentApi,setCurrentApi] = useState<string>('')
-  const [currentResponse,setCurrentResponse] = useState([])
+  //const [currentResponse,setCurrentResponse] = useState([])
   const [progress,setProgress] = useState<boolean>(false)
-  const [apis,setApis] = useState<string[]>([])
+  //const [apis,setApis] = useState<string[]>([])
   const [csvs,setCsvs] = useState<JSX.Element[]>([])
   const [ok,setOk] = useState<boolean>(false)
   const fetchApi = async () => {
